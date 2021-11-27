@@ -10,7 +10,7 @@ import Foundation
 struct Weather: Codable, Identifiable {
     let dt: Int?
     let temp: Double?
-    let feelLike: Double?
+    let feelsLike: Double?
     let humidity: Int?
     let dewPoint: Double?
     let clouds: Int?

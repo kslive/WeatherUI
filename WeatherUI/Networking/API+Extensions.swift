@@ -11,6 +11,6 @@ extension API {
     static let baseUrl = "https://api.openweathermap.org/data/2.5/"
     
     static func getUrlFor(lat: Double, lon: Double) -> String {
-        "\(baseUrl)oncall?lat=\(lat)&lon=\(lon)&exclude=minutely$appid=\(key)&units=metric"
+        "\(baseUrl)onecall?lat=\(lat)&lon=\(lon)&exclude=minutely$appid=\(key)&units=metric"
     }
 }

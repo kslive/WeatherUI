@@ -149,15 +149,15 @@ final class CityViewModel: ObservableObject {
         }
     }
     
-    private func getTimeFor(timestamp: Int) -> String {
+    func getTimeFor(timestamp: Int) -> String {
         timeFormatter.string(from: .init(timeIntervalSince1970: .init(timestamp)))
     }
     
-    private func getTempFor(temp: Double) -> String {
+    func getTempFor(temp: Double) -> String {
         .init(format: "%0.1f", temp)
     }
     
-    private func getDayFor(timestamp: Int) -> String {
+    func getDayFor(timestamp: Int) -> String {
         dayFormatter.string(from: .init(timeIntervalSince1970: .init(timestamp)))
     }
     
