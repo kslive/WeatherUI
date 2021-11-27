@@ -17,7 +17,7 @@ struct LottieView: UIViewRepresentable {
     }
     
     func updateUIView(_ uiView: UIViewType, context: UIViewRepresentableContext<LottieView>) {
-        uiView.subviews.forEach({$0.removeFromSuperview()})
+        uiView.subviews.forEach { $0.removeFromSuperview() }
         
         let animationView = AnimationView()
         animationView.translatesAutoresizingMaskIntoConstraints = false
